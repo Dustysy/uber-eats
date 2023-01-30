@@ -1,0 +1,146 @@
+body, h1, h2, h3, h4, p, a {
+   margin: 0;
+   font-size: 100%;
+   font-family: 'Roboto', 'Montserrat', 'Lato', 'Arial';
+   font-weight: 400;
+   text-decoration: none;
+}
+
+.header {
+   background-color: #FFF;
+   position: fixed;
+   box-sizing: content-box;
+   width: 100%;
+   box-shadow: 0px 3px 16px rgb(38 38 38 / 16%);
+}
+
+.head {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1% 6%;
+}
+
+.enter {
+   display: flex;
+   align-items: center;
+}
+
+.head button {
+   font: 13px Roboto, sans-serif;
+   border: 1px solid #E0E0E0;
+   box-sizing: border-box;
+   border-radius: 2px;
+   background-color: #fff;
+   text-align: center;
+}
+
+
+
+.cards {
+   display: flex;
+   flex-flow: row wrap;
+}
+
+.card {
+   padding: 0.5%;
+   margin: 0%;
+   }
+
+.card img {
+   object-fit: cover;
+   width: 100%;
+   }
+
+.cards p{
+   color: #000;
+   font-style: normal;
+}
+
+
+footer a{
+   color: #f2f2f2;
+   font-style: normal;
+   font-size: 11px;
+}
+
+.footer {
+   background-color: #262626;
+   padding: 4% 6%
+}
+
+.information {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: left;
+}
+
+.info p{
+   padding: 2%;
+}
+
+/* скрываем чекбокс */
+#menu__toggle {
+   opacity: 0;
+ }
+ /* стилизуем кнопку */
+ .menu__btn {
+   display: flex; /* используем flex для центрирования содержимого */
+   align-items: center;  
+   position: relative;
+   cursor: pointer;
+   z-index: 1;
+ }
+ /* добавляем "гамбургер" */
+ .menu__btn > span,
+ .menu__btn > span::before,
+ .menu__btn > span::after {
+   display: block;
+   position: absolute;
+   width: 50%;
+   height: 2px;
+   background-color: #f5f5f5;
+ }
+ .menu__btn > span::before {
+   content: '';
+   width: 50%;
+ }
+
+
+/* контейнер меню */
+.navbar-nav {
+   display: flex;
+   justify-content: right;
+   flex-flow:column;
+   visibility: hidden;
+   width: 100%;
+   list-style: none;
+   text-align: left;
+   background-color: #343A40;
+ }
+
+ #menu__toggle:checked ~ .navbar-nav {
+   visibility: visible;
+   left: 0;
+ }
+
+
+.download {
+   display:flex;
+   justify-content: center;
+   flex-flow: row nowrap;
+}
+
+
+.size  img {
+   padding: 10%;
+   width: 75%;
+   object-fit: cover;
+   flex-flow: row;
+}
+
+.user{
+   justify-content: space-between;
+   display: flex;
+   flex-flow: row wrap;
+}

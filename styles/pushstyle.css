@@ -1,0 +1,42 @@
+body, h1, h2, h3, h4, p, a {
+    margin: 0;
+    font-size: 100%;
+    font-family: 'Roboto', 'Montserrat', 'Lato', 'Arial';
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 136x;
+
+ }
+
+.cards {
+    display: flex;
+    flex-flow: column wrap;
+}
+ 
+.card {
+    padding: 3% 1.5%;
+
+}
+
+.card-body {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid rgba(117 117 117 / 20%);
+    border-radius: 1%;
+    box-sizing: content-box;
+}
+
+/*.card::after*/
+ 
+.card img {
+    object-fit: cover;
+
+}
+ 
+.cards p{
+    color: #000;
+    font-style: normal;
+}
+ 
